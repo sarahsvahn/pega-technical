@@ -1,0 +1,146 @@
+/* 
+  
+  styles.css
+
+  Pega Technical Challenge
+  Sarah Svahn
+  November 3rd & 4th 2023
+
+*/
+
+.app {
+    display: flex;
+    height: 100vh;
+    background-color: cornsilk;
+    font-size: 20px;
+  }
+  
+  .navbar {
+    background-color: #242526;
+    color: #dcdcdc;
+  }
+
+    .nav-background {
+      width: 80px; /* collapsed width */
+    }
+
+    .nav-background:hover {
+      width: 375px; /* enlarged width */
+    }
+
+      .primary-panel {
+        height: 100vh; /* bug: this breaks the ability to minimize the navbar
+                          when a link is clicked, but without the app utilities
+                          aren't at the bottom
+                        */
+        display: flex;
+        flex-direction: column;
+      }
+
+        .nav-header {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          height: 56px;
+          align-items: center;
+        }
+
+          .logo-text {
+            font-weight: 800;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+          }
+        
+        .search-bar {
+          background-color: #3a3b3c;
+          width: 323px; /* 8 added for padding to be 331 */
+          height: 36px;
+          border-radius: 25px;
+          margin-left: 22px;
+          margin-right: 22px;
+          margin-top: 8px;
+          margin-bottom: 16px;
+          padding-left: 8px; /* no spec given */ 
+          display: flex;
+          align-items: center;
+        }
+
+        .search-bar-closed {
+          background-color: #3a3b3c;
+          width: 28px; /* 8 added for padding to be 36 */
+          align-self: center;
+          border-radius: 25px;
+          height: 36px;
+          margin-left: 22px;
+          margin-right: 22px;
+          margin-top: 8px;
+          margin-bottom: 16px;
+          display: flex;
+          align-items: center;
+          padding-left: 8px; /* no spec given */ 
+        }
+
+          .search-text {
+            color: #242526;
+            background: transparent;
+            border: none;
+            outline: none;
+            padding-left: 10px; /* no spec given */ 
+          }
+
+        .scrollable {
+          height: 100%;
+        }
+
+          .link {
+            color: #dcdcdc; /* override Link */
+            display: flex; 
+            flex-direction: row;
+            height: 40px;
+            text-decoration: none; 
+            align-items: center;
+            padding-right: 24px;
+          }
+
+          .link.open {
+            border-bottom: 3px solid #dcdcdc;
+          }
+
+            .link-icon {
+              width: 80px;
+              height: 20px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+            }
+
+            .carrot {
+              margin-left: auto;
+            }
+          
+          .create-cases {
+            background-color: #3a3b3c;
+            display: flex;
+            flex-direction: column;
+          }
+
+            .create-case {
+              display: flex;
+              height: 40px;
+              align-items: center;
+              color: #dcdcdc; /* override Link */
+              text-decoration: none;
+              padding-left: 80px;
+            }
+
+        .app-utilities {
+          margin-top: auto;
+          box-shadow: 0 -8px 8px rgba(8, 8, 8, 0.287);
+        }
+  
+  .content {
+    flex: 1; 
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+      
